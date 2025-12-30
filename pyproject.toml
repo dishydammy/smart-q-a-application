@@ -1,0 +1,26 @@
+[project]
+name = "smart-q-a-application"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "dishydammy",email = "damola810@yahoo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai (>=1.53.0,<2.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "google-generativeai (>=0.8.5,<0.9.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.1,<10.0.0)",
+    "pytest-mock (>=3.15.1,<4.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)"
+]
